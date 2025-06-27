@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Pneumonia Detection</title></head>
+<body>
+    <h1>Pneumonia Detection from X-ray</h1>
+    <form method="post" enctype="multipart/form-data" action="/predict">
+        <input type="file" name="xray" accept="image/*" required>
+        <button type="submit">Predict</button>
+    </form>
+    <h2>{{ prediction }}</h2>
+</body>
+</html>
